@@ -238,7 +238,9 @@ function esVocal(letra){
   //Escribe tu código aquí
   let abc = ["a", "e", "i", "o", "u"];
 for (let index = 0; index < abc.length; index++) {
-  if (abc[index] == (letra.toLowerCase())) {
+  if (letra.length>1) {
+    return "Dato incorrecto"
+  }else if (abc[index] == (letra.toLowerCase())) {
     return "Es vocal"
   } 
 }
